@@ -128,6 +128,7 @@ public class OrderResource {
         }
 
         // filtering support angular grid filtering number and text
+        /*
         if (params.containsKey(FILTERING) && !params.get(FILTERING).toString().isEmpty()) {
 
             Map<String, Map<String, String>> filter = new HashMap<>();
@@ -150,6 +151,7 @@ public class OrderResource {
             Page<Order> page = orderRepository.findAll(specification, pageable);
             return new ResponseEntity<>(page, HttpStatus.OK);
         }
+        */
 
         Page<Order> page = orderRepository.findAll(pageable);
         return new ResponseEntity<>(page, HttpStatus.OK);

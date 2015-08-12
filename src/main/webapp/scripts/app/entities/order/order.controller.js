@@ -12,18 +12,18 @@ angular.module('sandboxApp')
                 cellRenderer: function (params) {
                     return '<button type="submit"' +
                         ' ng-click=view(' + params.data.id + ')' +
-                        ' class="btn btn-primary btn-sm">' +
-                        '    <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.view"> View</span>' +
+                        ' class="btn btn-primary btn-xs btn-entity">' +
+                        '    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>' +
                         '</button>' +
                         '<button type="submit"' +
                         ' ng-click=edit(' + params.data.id + ')' +
-                        ' class="btn btn-primary btn-sm">' +
+                        ' class="btn btn-primary btn-xs btn-entity">' +
                         '    <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>' +
                         '</button>' +
                         '<button type="submit"' +
                         ' ng-click=delete(' + params.data.id + ')' +
-                        ' class="btn btn-primary btn-sm">' +
-                        '    <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>' +
+                        ' class="btn btn-primary btn-xs btn-entity">' +
+                        '    <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>' +
                         '</button>';
                 }
             },
